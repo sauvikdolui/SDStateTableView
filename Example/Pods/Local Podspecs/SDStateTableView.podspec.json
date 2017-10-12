@@ -1,0 +1,22 @@
+{
+  "name": "SDStateTableView",
+  "version": "0.1.0",
+  "summary": "A short description of SDStateTableView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sauvikatinnofied/SDStateTableView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sauvikatinnofied": "sauvikdolui@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/sauvikatinnofied/SDStateTableView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SDStateTableView/Classes/**/*"
+}
