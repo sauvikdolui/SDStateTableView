@@ -53,10 +53,10 @@ class ViewController: UIViewController {
                                                    message: "You are not connected to Internet, please try later",
                                                    buttonTitle: "Try Again",
                                                    buttonConfig: { (button) in
-                                                    //button.titl
+            // You can configure the button here
         },
                                                    retryAction: {
-                                                    self.stateTableView.setState(state: .loading(message: "Loading data..."))
+            self.stateTableView.setState(state: .loading(message: "Loading data..."))
         }))
     }
     
