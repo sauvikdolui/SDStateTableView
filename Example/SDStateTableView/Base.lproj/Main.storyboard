@@ -1,25 +1,122 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qgf-bX-TVY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Baseline standard spacing" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="fOE-cv-j0S">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                <viewController id="qgf-bX-TVY" customClass="ViewController" customModule="SDStateTableView_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wjW-ld-mOc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4T2-H3-IKV" customClass="SDStateTableView" customModule="SDStateTableView">
+                                <rect key="frame" x="16" y="20" width="351" height="552.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="IrF-iv-VHa">
+                                        <rect key="frame" x="0.0" y="28" width="351" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IrF-iv-VHa" id="1eZ-d6-ywN">
+                                            <rect key="frame" x="0.0" y="0.0" width="351" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="qgf-bX-TVY" id="5zr-ZC-DIe"/>
+                                    <outlet property="delegate" destination="qgf-bX-TVY" id="onc-Rj-sfV"/>
+                                </connections>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="060-KA-LhJ">
+                                <rect key="frame" x="16" y="574" width="351" height="68"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xPN-WM-WXa">
+                                        <rect key="frame" x="0.0" y="0.0" width="351" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p06-n9-R2t">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="30"/>
+                                                <state key="normal" title="Data Available"/>
+                                                <connections>
+                                                    <action selector="dataAvailableButtonTapped:" destination="qgf-bX-TVY" eventType="touchUpInside" id="yk3-hz-VuX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bb0-5N-7a5">
+                                                <rect key="frame" x="136" y="0.0" width="74" height="30"/>
+                                                <state key="normal" title="No Data"/>
+                                                <connections>
+                                                    <action selector="noDataAvailableButtonTapped:" destination="qgf-bX-TVY" eventType="touchUpInside" id="LkC-Sq-GuT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Rv-dY-exX">
+                                                <rect key="frame" x="218" y="0.0" width="133" height="30"/>
+                                                <state key="normal" title="Error with Image"/>
+                                                <connections>
+                                                    <action selector="errorWithImageButtonTapped:" destination="qgf-bX-TVY" eventType="touchUpInside" id="Rkh-9F-GSz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Geq-oq-eRB">
+                                        <rect key="frame" x="0.0" y="38" width="351" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbi-fK-12D">
+                                                <rect key="frame" x="0.0" y="0.0" width="105.5" height="30"/>
+                                                <state key="normal" title="Error Title"/>
+                                                <connections>
+                                                    <action selector="errorWithTitleButtonTapped:" destination="qgf-bX-TVY" eventType="touchUpInside" id="ZJX-W9-cxK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKB-yf-eHf">
+                                                <rect key="frame" x="113.5" y="0.0" width="85.5" height="30"/>
+                                                <state key="normal" title="Loading"/>
+                                                <connections>
+                                                    <action selector="loadingDataButtonTapped:" destination="qgf-bX-TVY" eventType="touchUpInside" id="BWv-ZG-1F0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrG-ox-d4k" userLabel="NoInternetButton">
+                                                <rect key="frame" x="207" y="0.0" width="144" height="30"/>
+                                                <state key="normal" title="Error with retry"/>
+                                                <connections>
+                                                    <action selector="noInternetButtonTapped:" destination="qgf-bX-TVY" eventType="touchUpInside" id="35m-EC-N4o"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4T2-H3-IKV" firstAttribute="leading" secondItem="jDp-qP-MkU" secondAttribute="leading" constant="16" id="7bh-PJ-J2X"/>
+                            <constraint firstItem="4T2-H3-IKV" firstAttribute="top" secondItem="jDp-qP-MkU" secondAttribute="top" id="ISP-HA-sz0"/>
+                            <constraint firstItem="jDp-qP-MkU" firstAttribute="trailing" secondItem="4T2-H3-IKV" secondAttribute="trailing" constant="8" id="KHa-Ug-RsN"/>
+                            <constraint firstItem="060-KA-LhJ" firstAttribute="trailing" secondItem="4T2-H3-IKV" secondAttribute="trailing" id="XXg-1q-8MG"/>
+                            <constraint firstItem="060-KA-LhJ" firstAttribute="leading" secondItem="4T2-H3-IKV" secondAttribute="leading" id="f34-PC-S7q"/>
+                            <constraint firstItem="060-KA-LhJ" firstAttribute="firstBaseline" secondItem="4T2-H3-IKV" secondAttribute="baseline" constant="22" symbolType="layoutAnchor" id="ffo-qQ-efB"/>
+                            <constraint firstItem="060-KA-LhJ" firstAttribute="top" secondItem="4T2-H3-IKV" secondAttribute="bottom" constant="1.5" id="tfp-cz-TWQ"/>
+                            <constraint firstItem="jDp-qP-MkU" firstAttribute="bottom" secondItem="060-KA-LhJ" secondAttribute="bottom" constant="25" id="zQS-YL-IYX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jDp-qP-MkU"/>
                     </view>
+                    <connections>
+                        <outlet property="stateTableView" destination="4T2-H3-IKV" id="aMB-d7-2yJ"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zGM-Kg-q4N" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

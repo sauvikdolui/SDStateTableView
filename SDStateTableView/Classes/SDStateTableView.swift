@@ -123,7 +123,7 @@ public class SDStateTableView: UITableView {
     
     var buttonAction: (() -> Void)?
     
-    var currentState: SDStateTableViewState = .unknown
+    public var currentState: SDStateTableViewState = .unknown
     
     override init(frame: CGRect, style: UITableViewStyle) {
         super.init(frame: frame, style: style)
