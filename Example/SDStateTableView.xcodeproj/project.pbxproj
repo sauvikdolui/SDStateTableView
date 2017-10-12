@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1811C214121C5A21BA9875E9 /* Pods_SDStateTableView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1D1311E5CDCFD90FD00DDC /* Pods_SDStateTableView_Tests.framework */; };
+		45166C401F90043C00FC1AE1 /* SDStateTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45166C411F90043C00FC1AE1 /* SDStateTableView.framework */; };
 		5D2D1FBA07EC17FB0143E0DD /* Pods_SDStateTableView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC12323B3DDD814345D5A146 /* Pods_SDStateTableView_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 		0F1D1311E5CDCFD90FD00DDC /* Pods_SDStateTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDStateTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11826B830A13C212435C140E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		19FF119866A9F3488F604E7C /* SDStateTableView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SDStateTableView.podspec; path = ../SDStateTableView.podspec; sourceTree = "<group>"; };
+		45166C411F90043C00FC1AE1 /* SDStateTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDStateTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E73F86F4DCD377E97488911 /* Pods-SDStateTableView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDStateTableView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDStateTableView_Tests/Pods-SDStateTableView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SDStateTableView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDStateTableView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45166C401F90043C00FC1AE1 /* SDStateTableView.framework in Frameworks */,
 				5D2D1FBA07EC17FB0143E0DD /* Pods_SDStateTableView_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +145,7 @@
 		997AC1D24DF6A46125E61415 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45166C411F90043C00FC1AE1 /* SDStateTableView.framework */,
 				DC12323B3DDD814345D5A146 /* Pods_SDStateTableView_Example.framework */,
 				0F1D1311E5CDCFD90FD00DDC /* Pods_SDStateTableView_Tests.framework */,
 			);
