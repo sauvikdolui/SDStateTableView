@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SDStateTableView_Example' do
+  pod 'SDStateTableView', :path => '../'
+
+  target 'SDStateTableView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
