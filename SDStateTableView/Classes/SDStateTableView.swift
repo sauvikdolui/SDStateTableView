@@ -16,79 +16,79 @@ public enum SDStateTableViewState {
 }
 
 @IBDesignable
-class SDStateTableView: UITableView {
+public class SDStateTableView: UITableView {
     
     @IBInspectable
-    var stateViewCenterPositionOffset: CGPoint = CGPoint(x: 0.0, y: 0.0) {
-        didSet {
-            setUp()
-        }
-    }
-    
-    @IBInspectable
-    var spinnerColor: UIColor = UIColor.lightGray {
-        didSet {
-            setUp()
-        }
-    }
-    @IBInspectable
-    var stateViewTitleColor: UIColor = UIColor.darkGray {
-        didSet {
-            setUp()
-        }
-    }
-    @IBInspectable
-    var stateViewSubtitleColor: UIColor = UIColor.lightGray {
-        didSet {
-            setUp()
-        }
-    }
-    @IBInspectable
-    var buttonColor: UIColor = UIColor.darkGray {
+    public var stateViewCenterPositionOffset: CGPoint = CGPoint(x: 0.0, y: 0.0) {
         didSet {
             setUp()
         }
     }
     
     @IBInspectable
-    var stateLabelTitleFontFamily: String = "HelveticaNeue-Bold" {
+    public var spinnerColor: UIColor = UIColor.lightGray {
         didSet {
             setUp()
         }
     }
     @IBInspectable
-    var stateLabelSubtitleFontFamily: String = "HelveticaNeue-Light" {
+    public var stateViewTitleColor: UIColor = UIColor.darkGray {
         didSet {
             setUp()
         }
     }
     @IBInspectable
-    var retryButtonFontFamily: String = "HelveticaNeue-Regular" {
+    public var stateViewSubtitleColor: UIColor = UIColor.lightGray {
         didSet {
             setUp()
         }
     }
     @IBInspectable
-    var stateLabelTitleFontSize: CGFloat = 20.0 {
-        didSet {
-            setUp()
-        }
-    }
-    @IBInspectable
-    var stateLabelSubtitleFontSize: CGFloat = 16.0 {
-        didSet {
-            setUp()
-        }
-    }
-    @IBInspectable
-    var buttonFontSize: CGFloat = 16.0 {
+    public var buttonColor: UIColor = UIColor.darkGray {
         didSet {
             setUp()
         }
     }
     
     @IBInspectable
-    var buttonSize: CGSize = CGSize(width: 200.0, height: 44.0) {
+    public var stateLabelTitleFontFamily: String = "HelveticaNeue-Bold" {
+        didSet {
+            setUp()
+        }
+    }
+    @IBInspectable
+    public var stateLabelSubtitleFontFamily: String = "HelveticaNeue-Light" {
+        didSet {
+            setUp()
+        }
+    }
+    @IBInspectable
+    public var retryButtonFontFamily: String = "HelveticaNeue-Regular" {
+        didSet {
+            setUp()
+        }
+    }
+    @IBInspectable
+    public var stateLabelTitleFontSize: CGFloat = 20.0 {
+        didSet {
+            setUp()
+        }
+    }
+    @IBInspectable
+    public var stateLabelSubtitleFontSize: CGFloat = 16.0 {
+        didSet {
+            setUp()
+        }
+    }
+    @IBInspectable
+    public var buttonFontSize: CGFloat = 16.0 {
+        didSet {
+            setUp()
+        }
+    }
+    
+    @IBInspectable
+    public var buttonSize: CGSize = CGSize(width: 200.0, height: 44.0) {
         didSet {
             setUp()
         }
@@ -96,13 +96,13 @@ class SDStateTableView: UITableView {
     
     // MARK: Spacing
     @IBInspectable
-    var titleStackSpacing: CGFloat = 8.0 {
+    public var titleStackSpacing: CGFloat = 8.0 {
         didSet {
             setUp()
         }
     }
     @IBInspectable
-    var imageTitleStackSpacing: CGFloat = 16.0 {
+    public var imageTitleStackSpacing: CGFloat = 16.0 {
         didSet {
             setUp()
         }
@@ -131,13 +131,13 @@ class SDStateTableView: UITableView {
     }
     
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder : aDecoder)
         setUp()
     }
     
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         
         switch self.currentState {
@@ -217,7 +217,7 @@ class SDStateTableView: UITableView {
         // Deinitialization code goes here
     }
     
-    func setState(state: SDStateTableViewState) {
+    public func setState(state: SDStateTableViewState) {
         self.currentState =  state
         reloadData()
         switch state {

@@ -10,9 +10,9 @@
 		0443418FD3B8EBF6BFBC2785F01CF159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		14446CE7B74128F7487D65CCA59240DF /* Pods-SDStateTableView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B040EDB3CB5A075E2D3B7C02DE84015 /* Pods-SDStateTableView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D44016D79B19B683D9E32CC069D4AED /* SDStateTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA44DE340E7EA0C28524A9D4AF5A55A /* SDStateTableView-dummy.m */; };
-		45D876AE1F8FEF1200F81E75 /* UILayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D876AD1F8FEF1200F81E75 /* UILayout.swift */; };
-		45D876B01F8FEF2F00F81E75 /* UIViewAutolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D876AF1F8FEF2F00F81E75 /* UIViewAutolayout.swift */; };
-		45D876B21F8FEF9400F81E75 /* SDStateTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D876B11F8FEF9300F81E75 /* SDStateTableView.swift */; };
+		45D876BD1F8FF9AB00F81E75 /* SDStateTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D876B91F8FF9AA00F81E75 /* SDStateTableView.swift */; };
+		45D876BE1F8FF9AB00F81E75 /* UILayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D876BB1F8FF9AA00F81E75 /* UILayout.swift */; };
+		45D876BF1F8FF9AB00F81E75 /* UIViewAutolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D876BC1F8FF9AA00F81E75 /* UIViewAutolayout.swift */; };
 		9346F7C11ACE74E094480AC8D66011DE /* Pods-SDStateTableView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDD09A7B0BA1F42EE38E1BF54761F5E /* Pods-SDStateTableView_Tests-dummy.m */; };
 		BA9617F9E7B653FE719A61F056F4A9CF /* Pods-SDStateTableView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 124A7CEEFCCB25738D1348133954862C /* Pods-SDStateTableView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C76C3429869C29597B2B9B88857099DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -42,9 +42,9 @@
 		3C446FA10DD1634A3EFD96A982392ED1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41FA5721AB805FB65B602BB7B22B8225 /* Pods-SDStateTableView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SDStateTableView_Example-dummy.m"; sourceTree = "<group>"; };
 		4357E969821B0E5648B4AF76A1BC473D /* Pods-SDStateTableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDStateTableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		45D876AD1F8FEF1200F81E75 /* UILayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILayout.swift; sourceTree = "<group>"; };
-		45D876AF1F8FEF2F00F81E75 /* UIViewAutolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAutolayout.swift; sourceTree = "<group>"; };
-		45D876B11F8FEF9300F81E75 /* SDStateTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDStateTableView.swift; sourceTree = "<group>"; };
+		45D876B91F8FF9AA00F81E75 /* SDStateTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDStateTableView.swift; sourceTree = "<group>"; };
+		45D876BB1F8FF9AA00F81E75 /* UILayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILayout.swift; sourceTree = "<group>"; };
+		45D876BC1F8FF9AA00F81E75 /* UIViewAutolayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAutolayout.swift; sourceTree = "<group>"; };
 		4B53CDCF51029B9BE335648947B5E960 /* Pods_SDStateTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDStateTableView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		588B90FBDF3BD67EFF14DC05AF7CB029 /* Pods-SDStateTableView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SDStateTableView_Example.modulemap"; sourceTree = "<group>"; };
 		5A34F7D222C1A6EA213B21F9E28CE9B9 /* Pods-SDStateTableView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SDStateTableView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -105,20 +105,21 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		45D876AA1F8FEEF400F81E75 /* Source */ = {
+		45D876B81F8FF9AA00F81E75 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				45D876B11F8FEF9300F81E75 /* SDStateTableView.swift */,
-				45D876AC1F8FEEF400F81E75 /* UIView+Autolayout */,
+				45D876B91F8FF9AA00F81E75 /* SDStateTableView.swift */,
+				45D876BA1F8FF9AA00F81E75 /* UIView+Autolayout */,
 			);
-			path = Source;
+			name = Classes;
+			path = SDStateTableView/Classes;
 			sourceTree = "<group>";
 		};
-		45D876AC1F8FEEF400F81E75 /* UIView+Autolayout */ = {
+		45D876BA1F8FF9AA00F81E75 /* UIView+Autolayout */ = {
 			isa = PBXGroup;
 			children = (
-				45D876AD1F8FEF1200F81E75 /* UILayout.swift */,
-				45D876AF1F8FEF2F00F81E75 /* UIViewAutolayout.swift */,
+				45D876BB1F8FF9AA00F81E75 /* UILayout.swift */,
+				45D876BC1F8FF9AA00F81E75 /* UIViewAutolayout.swift */,
 			);
 			path = "UIView+Autolayout";
 			sourceTree = "<group>";
@@ -205,7 +206,7 @@
 		C2E677BF77E4AEE77441A1BBFFE84E64 /* SDStateTableView */ = {
 			isa = PBXGroup;
 			children = (
-				45D876AA1F8FEEF400F81E75 /* Source */,
+				45D876B81F8FF9AA00F81E75 /* Classes */,
 				559CE3411A15F173FE539958B81CD13F /* Support Files */,
 			);
 			name = SDStateTableView;
@@ -348,10 +349,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45D876B21F8FEF9400F81E75 /* SDStateTableView.swift in Sources */,
+				45D876BE1F8FF9AB00F81E75 /* UILayout.swift in Sources */,
+				45D876BF1F8FF9AB00F81E75 /* UIViewAutolayout.swift in Sources */,
+				45D876BD1F8FF9AB00F81E75 /* SDStateTableView.swift in Sources */,
 				1D44016D79B19B683D9E32CC069D4AED /* SDStateTableView-dummy.m in Sources */,
-				45D876AE1F8FEF1200F81E75 /* UILayout.swift in Sources */,
-				45D876B01F8FEF2F00F81E75 /* UIViewAutolayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +452,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -651,6 +653,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

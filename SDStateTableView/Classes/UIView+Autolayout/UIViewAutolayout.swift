@@ -13,58 +13,58 @@ import UIKit
 public extension UIView {
     
     // Alignments
-    func _setLeftAlignWith(view: UIView, offset: CGFloat = 0.0) {
+    public func _setLeftAlignWith(view: UIView, offset: CGFloat = 0.0) {
         // Leading will be same
         _setAttribute(attribute: .leading, toView: view, targetAttribute: .leading, constant: offset)
     }
-    func _setRightAlignWith(view: UIView, offset: CGFloat = 0.0) {
+    public func _setRightAlignWith(view: UIView, offset: CGFloat = 0.0) {
         // Trailings will be same
         _setAttribute(attribute: .trailing, toView: view, targetAttribute: .trailing, constant: offset)
     }
-    func _setTopAlignWith(view: UIView, offset: CGFloat = 0.0) {
+    public func _setTopAlignWith(view: UIView, offset: CGFloat = 0.0) {
         // Top will be same
         _setAttribute(attribute: .top, toView: view, targetAttribute: .top, constant: offset)
     }
-    func _setBottomAlignWith(view: UIView, offset: CGFloat = 0.0) {
+    public func _setBottomAlignWith(view: UIView, offset: CGFloat = 0.0) {
         //Bottom will be same
         _setAttribute(attribute: .bottom, toView: view, targetAttribute: .bottom, constant: offset)
     }
-    func _setCenterXAlignWith(view: UIView, offset: CGFloat = 0.0) {
+    public func _setCenterXAlignWith(view: UIView, offset: CGFloat = 0.0) {
         _setAttribute(attribute: .centerX, toView: view, targetAttribute: .centerX, constant: offset)
     }
-    func _setCenterYAlignWith(view: UIView, offset: CGFloat = 0.0) {
+    public func _setCenterYAlignWith(view: UIView, offset: CGFloat = 0.0) {
         _setAttribute(attribute: .centerY, toView: view, targetAttribute: .centerY, constant: offset)
     }
-    func _setCenterAlignWith(view: UIView, offset: CGPoint = CGPoint(x: 0.0, y: 0.0)) {
+    public func _setCenterAlignWith(view: UIView, offset: CGPoint = CGPoint(x: 0.0, y: 0.0)) {
         _setCenterXAlignWith(view: view, offset: offset.x)
         _setCenterYAlignWith(view: view, offset: offset.y)
     }
     
     
     // Positioning
-    func _setLeadingFromRightEdgeOf(view: UIView, offset: CGFloat = 8.0) {
+    public func _setLeadingFromRightEdgeOf(view: UIView, offset: CGFloat = 8.0) {
         _setAttribute(attribute: .leading, toView: view, targetAttribute: .trailing, constant: offset)
     }
-    func _setTrailingFromLeftEdgeOf(view: UIView, offset: CGFloat = 8.0) {
+    public func _setTrailingFromLeftEdgeOf(view: UIView, offset: CGFloat = 8.0) {
         _setAttribute(attribute: .trailing, toView: view, targetAttribute: .leading, constant: offset)
     }
     
-    func _setTopFromBottomEdgeOf(view: UIView, offset: CGFloat = 8.0) {
+    public func _setTopFromBottomEdgeOf(view: UIView, offset: CGFloat = 8.0) {
         _setAttribute(attribute: .top, toView: view, targetAttribute: .bottom, constant: offset)
     }
     
-    func _setBottomFromTopEdgeOf(view: UIView, offset: CGFloat = 8.0) {
+    public func _setBottomFromTopEdgeOf(view: UIView, offset: CGFloat = 8.0) {
         _setAttribute(attribute: .bottom, toView: view, targetAttribute: .top, constant: offset)
     }
     
     // Size
-    func _setWidthEqualTo(view: UIView, offset: CGFloat = 0.0) {
+    public func _setWidthEqualTo(view: UIView, offset: CGFloat = 0.0) {
         _setAttribute(attribute: .width, toView: view, targetAttribute: .width, constant: offset)
     }
-    func _setHeightEqualTo(view: UIView, offset: CGFloat = 0.0) {
+    public func _setHeightEqualTo(view: UIView, offset: CGFloat = 0.0) {
         _setAttribute(attribute: .height, toView: view, targetAttribute: .height, constant: offset)
     }
-    func _setSizeEqualTo(view: UIView, offset: CGPoint = CGPoint(x:0.0, y: 0.0)) {
+    public func _setSizeEqualTo(view: UIView, offset: CGPoint = CGPoint(x:0.0, y: 0.0)) {
         _setWidthEqualTo(view: view, offset: offset.x)
         _setHeightEqualTo(view: view, offset: offset.y)
     }
@@ -77,40 +77,40 @@ public extension UIView {
 public extension UIView {
     
     
-    func _setTop(topPadding: CGFloat) {
+    public func _setTop(topPadding: CGFloat) {
         let contraint = constraintFor(attribute: .top, toView: superview,
                                       toAttribute: .top, constraint: topPadding)
         superview?.addConstraint(contraint)
         
     }
-    func _setLeft(sidePadding: CGFloat) {
+    public func _setLeft(sidePadding: CGFloat) {
         let contraint = constraintFor(attribute: .left, toView: superview,
                                       toAttribute: .left, constraint: sidePadding)
         superview?.addConstraint(contraint)
         
     }
     // Fixed Width
-    func _setWidth(width: CGFloat) {
+    public func _setWidth(width: CGFloat) {
         let widthContraint = constraintFor(attribute: .width, toView: nil,
                                            toAttribute: .notAnAttribute, constraint: width)
         superview?.addConstraint(widthContraint)
     }
-    func _setWidth(sidePadding: CGFloat) {
+    public func _setWidth(sidePadding: CGFloat) {
         _setAttribute(attribute: .leading, padding: sidePadding)
         _setAttribute(attribute: .trailing, padding: -sidePadding)
     }
-    func _setHeight(verticalPadding: CGFloat) {
+    public func _setHeight(verticalPadding: CGFloat) {
         _setAttribute(attribute: .top, padding: verticalPadding)
         _setAttribute(attribute: .bottom, padding: -verticalPadding)
     }
     // Fixed Height
-    func _setHeight(height: CGFloat) {
+    public func _setHeight(height: CGFloat) {
         let heightConstraint = constraintFor(attribute: .height, toView: nil,
                                              toAttribute: .notAnAttribute, constraint: height)
         superview?.addConstraint(heightConstraint)
     }
     // Fixed Size
-    func _setSize(size: CGSize?) {
+    public func _setSize(size: CGSize?) {
         guard let size = size else {
             // Going to return assuming size has been set
             return
@@ -120,26 +120,26 @@ public extension UIView {
     }
     
     // Equal Size
-    func _setEqualWidth() {
+    public func _setEqualWidth() {
         let widthContraint = constraintFor(attribute: .width, toView: superview,
                                            toAttribute: .width, constraint: 0.0)
         superview?.addConstraint(widthContraint)
     }
     // Fixed Height
-    func _setEqualHeight() {
+    public func _setEqualHeight() {
         let heightConstraint = constraintFor(attribute: .height, toView: superview,
                                              toAttribute: .height, constraint: 0.0)
         superview?.addConstraint(heightConstraint)
     }
     // Fixed Size
-    func _setEqualSize() {
+    public func _setEqualSize() {
         _setEqualWidth()
         _setEqualHeight()
     }
     
     
     //
-    func _layoutWith(size: CGSize?, topLeftOffset: CGPoint) {
+    public func _layoutWith(size: CGSize?, topLeftOffset: CGPoint) {
         
         _setSize(size: size)
         
@@ -149,7 +149,7 @@ public extension UIView {
         _setAttribute(attribute: .top, padding: topLeftOffset.y)
     }
     
-    func _layoutWith(size: CGSize?, topRightOffset: CGPoint) {
+    public func _layoutWith(size: CGSize?, topRightOffset: CGPoint) {
         
         _setSize(size: size)
         
@@ -158,7 +158,7 @@ public extension UIView {
         // Top Contraint
         _setAttribute(attribute: .top, padding: topRightOffset.y)
     }
-    func _layoutWith(size: CGSize?, bottomLeftOffset: CGPoint) {
+    public func _layoutWith(size: CGSize?, bottomLeftOffset: CGPoint) {
         _setSize(size: size)
         
         // Leading constraint
@@ -167,7 +167,7 @@ public extension UIView {
         _setAttribute(attribute: .bottom, padding: -bottomLeftOffset.y)
     }
     
-    func _layoutWith(size: CGSize?, bottomRightOffset: CGPoint) {
+    public func _layoutWith(size: CGSize?, bottomRightOffset: CGPoint) {
         
         _setSize(size: size)
         
@@ -176,7 +176,7 @@ public extension UIView {
         // Bottom Contraint
         _setAttribute(attribute: .bottom, padding: -bottomRightOffset.y)
     }
-    func _layoutWith(size: CGSize?, centerOffset: CGPoint) {
+    public func _layoutWith(size: CGSize?, centerOffset: CGPoint) {
         
         _setSize(size: size)
         
@@ -187,12 +187,12 @@ public extension UIView {
     }
     
     // Helper for laying out in super view
-    func _setAttribute(attribute: NSLayoutAttribute, padding: CGFloat) {
+    public func _setAttribute(attribute: NSLayoutAttribute, padding: CGFloat) {
         let paddingConstraint = constraintFor(attribute: attribute, toView: superview, toAttribute: attribute, constraint: padding)
         superview?.addConstraint(paddingConstraint)
     }
     // Helper in laying out wrt another View
-    func _setAttribute(attribute: NSLayoutAttribute, toView: UIView,
+    public func _setAttribute(attribute: NSLayoutAttribute, toView: UIView,
                        targetAttribute: NSLayoutAttribute, constant: CGFloat = 0.0) {
         
         let paddingConstraint = constraintFor(attribute: attribute, toView: toView, toAttribute: targetAttribute, constraint: constant)
@@ -200,10 +200,10 @@ public extension UIView {
         
     }
     
-    func _layoutInSuper(margin: CGFloat){
+    public func _layoutInSuper(margin: CGFloat){
         _layoutInSuper(edgeInset: UIEdgeInsets(margin: margin))
     }
-    func _layoutInSuper(percentage: CGFloat) {
+    public func _layoutInSuper(percentage: CGFloat) {
         guard let parent = self.superview else {
             debugPrint("Error: Super view not found, can not layout")
             return
@@ -224,7 +224,7 @@ public extension UIView {
                                widthConstraint, heightConstraint])
     }
     
-    func _layoutInSuper(edgeInset: UIEdgeInsets) {
+    public func _layoutInSuper(edgeInset: UIEdgeInsets) {
         
         guard let parent = self.superview else {
             debugPrint("Error: Super view not found, can not layout")
@@ -248,7 +248,7 @@ public extension UIView {
     }
     
     // MARK: HELPER
-    func constraintFor(attribute: NSLayoutAttribute,
+    public func constraintFor(attribute: NSLayoutAttribute,
                        relatedBy: NSLayoutRelation = .equal,
                        toView: UIView?, toAttribute: NSLayoutAttribute,
                        multiplier: CGFloat = 1.0, constraint: CGFloat = 0.0) -> NSLayoutConstraint {
