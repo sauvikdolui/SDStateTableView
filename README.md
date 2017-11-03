@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/SDStateTableView.svg?style=flat)](http://cocoapods.org/pods/SDStateTableView)
 
 ## Example
-![Stateful TableView](http://img.youtube.com/vi/OSvX8y22GiU/0.jpg)](https://www.youtube.com/watch?v=OSvX8y22GiU)
+[![Stateful TableView](http://img.youtube.com/vi/OSvX8y22GiU/0.jpg)](https://www.youtube.com/watch?v=OSvX8y22GiU)
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
