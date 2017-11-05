@@ -217,7 +217,7 @@ public class SDStateTableView: UITableView {
         // Deinitialization code goes here
     }
     
-    public func setState(state: SDStateTableViewState) {
+    public func setState(_ state: SDStateTableViewState) {
         self.currentState =  state
         reloadData()
         switch state {

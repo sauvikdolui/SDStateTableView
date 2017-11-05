@@ -24,31 +24,31 @@ class ViewController: UIViewController {
     }
     
     @IBAction func dataAvailableButtonTapped(_ sender: UIButton) {
-        stateTableView.setState(state: .dataAvailable)
+        stateTableView.setState(.dataAvailable)
     }
     
     @IBAction func noDataAvailableButtonTapped(_ sender: UIButton) {
-        stateTableView.setState(state: .withImage(image: "empty_cart",
+        stateTableView.setState(.withImage(image: "empty_cart",
                                                   title: "EMPTY CART",
                                                   message: "Please add some item in your cart first"))
     }
     
     @IBAction func errorWithImageButtonTapped(_ sender: UIButton) {
-        stateTableView.setState(state: .withImage(image: "server_error",
+        stateTableView.setState(.withImage(image: "server_error",
                                                   title: "SERVER ERROR",
                                                   message: "We are notified and working on it, we will be back soon"))
     }
     @IBAction func errorWithTitleButtonTapped(_ sender: UIButton) {
-        stateTableView.setState(state: .withImage(image: nil,
+        stateTableView.setState(.withImage(image: nil,
                                                   title: "SIMPLE ERROR TITLE",
                                                   message: "Error message goes here"))
     }
     
     @IBAction func loadingDataButtonTapped(_ sender: UIButton) {
-        stateTableView.setState(state: .loading(message: "Loading data..."))
+        stateTableView.setState(.loading(message: "Loading data..."))
     }
     @IBAction func noInternetButtonTapped(_ sender: Any) {
-        stateTableView.setState(state: .withButton(errorImage: "no_internet",
+        stateTableView.setState(.withButton(errorImage: "no_internet",
                                                    title: "NO INTERNET",
                                                    message: "You are not connected to Internet, please try later",
                                                    buttonTitle: "Try Again",
@@ -56,7 +56,7 @@ class ViewController: UIViewController {
             // You can configure the button here
         },
                                                    retryAction: {
-            self.stateTableView.setState(state: .loading(message: "Loading data..."))
+            self.stateTableView.setState(.loading(message: "Loading data..."))
         }))
     }
     
