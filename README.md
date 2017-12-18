@@ -70,6 +70,10 @@ stateTableView.setState(.withButton(errorImage: "no_internet", title: "NO INTERN
 ```
 ![6_No_Internet_Connection.png](https://raw.githubusercontent.com/sauvikdolui/SDStateTableView/master/Screenshots/6_No_Internet_Connection.png)
 
+## Configuration
+1. Set `shouldScrollWithNoData`  to `true` or `false` according to your requirement.
+![shouldScrollWithNoData.png](https://raw.githubusercontent.com/sauvikdolui/SDStateTableView/master/Screenshots/shouldScrollWithNoData.png)
+
 ## Author
 
 sauvikatinnofied, sauvikdolui@gmail.com
