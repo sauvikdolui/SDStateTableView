@@ -108,6 +108,16 @@ public class SDStateTableView: UITableView {
         }
     }
     
+    /// Determines whether scrolling is enabled even when there is not data
+    ///
+    /// Note:   Default value is false, i.e. scrolling is not available when there is not data
+    @IBInspectable
+    public var shouldScrollWithNoData: Bool = false {
+        didSet {
+            setUp()
+        }
+    }
+    
     var originalSeparatorStyle =  UITableViewCellSeparatorStyle.singleLine
     var spinnerView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
     
@@ -123,7 +133,17 @@ public class SDStateTableView: UITableView {
     
     var buttonAction: (() -> Void)?
     
-    public var currentState: SDStateTableViewState = .unknown
+    public var currentState: SDStateTableViewState = .unknown {
+        didSet {
+            if case SDStateTableViewState.dataAvailable  = self.currentState {
+                isScrollEnabled = true
+            } else {
+                // Data is available, let's decide according to the
+                // value set to shouldScrollWithNoData
+                isScrollEnabled = shouldScrollWithNoData
+            }
+        }
+    }
     
     override init(frame: CGRect, style: UITableViewStyle) {
         super.init(frame: frame, style: style)
@@ -219,6 +239,9 @@ public class SDStateTableView: UITableView {
     
     public func setState(_ state: SDStateTableViewState) {
         self.currentState =  state
+        
+
+        
         reloadData()
         switch state {
             
