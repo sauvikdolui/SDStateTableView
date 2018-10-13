@@ -118,8 +118,8 @@ public class SDStateTableView: UITableView {
         }
     }
     
-    var originalSeparatorStyle =  UITableViewCellSeparatorStyle.singleLine
-    var spinnerView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+    var originalSeparatorStyle =  UITableViewCell.SeparatorStyle.singleLine
+    var spinnerView = UIActivityIndicatorView(style: .gray)
     
     var dataStateTitleLabel = UILabel.autolayoutView()
     var dataStateSubtitleLabel = UILabel.autolayoutView()
@@ -145,7 +145,7 @@ public class SDStateTableView: UITableView {
         }
     }
     
-    override init(frame: CGRect, style: UITableViewStyle) {
+    override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         setUp()
     }

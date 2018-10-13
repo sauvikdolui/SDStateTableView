@@ -21,12 +21,14 @@ public extension UIView {
 
 public extension UIEdgeInsets {
     public init(margin: CGFloat) {
+        self.init()
         self.top = margin
         self.bottom = margin
         self.left = margin
         self.right = margin
     }
     public init(sidePadding: CGFloat, verticalPadding: CGFloat) {
+        self.init()
         self.top = verticalPadding
         self.bottom = verticalPadding
         self.left = sidePadding
