@@ -187,13 +187,13 @@ public extension UIView {
     }
     
     // Helper for laying out in super view
-    public func _setAttribute(attribute: NSLayoutAttribute, padding: CGFloat) {
+    public func _setAttribute(attribute: NSLayoutConstraint.Attribute, padding: CGFloat) {
         let paddingConstraint = constraintFor(attribute: attribute, toView: superview, toAttribute: attribute, constraint: padding)
         superview?.addConstraint(paddingConstraint)
     }
     // Helper in laying out wrt another View
-    public func _setAttribute(attribute: NSLayoutAttribute, toView: UIView,
-                       targetAttribute: NSLayoutAttribute, constant: CGFloat = 0.0) {
+    public func _setAttribute(attribute: NSLayoutConstraint.Attribute, toView: UIView,
+                              targetAttribute: NSLayoutConstraint.Attribute, constant: CGFloat = 0.0) {
         
         let paddingConstraint = constraintFor(attribute: attribute, toView: toView, toAttribute: targetAttribute, constraint: constant)
         superview?.addConstraint(paddingConstraint)
@@ -248,9 +248,9 @@ public extension UIView {
     }
     
     // MARK: HELPER
-    public func constraintFor(attribute: NSLayoutAttribute,
-                       relatedBy: NSLayoutRelation = .equal,
-                       toView: UIView?, toAttribute: NSLayoutAttribute,
+    public func constraintFor(attribute: NSLayoutConstraint.Attribute,
+                              relatedBy: NSLayoutConstraint.Relation = .equal,
+                              toView: UIView?, toAttribute: NSLayoutConstraint.Attribute,
                        multiplier: CGFloat = 1.0, constraint: CGFloat = 0.0) -> NSLayoutConstraint {
         
         return NSLayoutConstraint(item: self,
