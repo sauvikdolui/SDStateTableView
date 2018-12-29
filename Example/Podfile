@@ -6,6 +6,5 @@ target 'SDStateTableView_Example' do
   target 'SDStateTableView_Tests' do
     inherit! :search_paths
 
-    
   end
 end

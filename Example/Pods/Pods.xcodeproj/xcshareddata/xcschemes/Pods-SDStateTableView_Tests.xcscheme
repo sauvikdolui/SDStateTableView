@@ -14,24 +14,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "SDStateTableView_Example.app"
-               BlueprintName = "SDStateTableView_Example"
-               ReferencedContainer = "container:SDStateTableView.xcodeproj">
+               BlueprintIdentifier = "9E16B664E2A8888D689596C69695B184"
+               BuildableName = "Pods_SDStateTableView_Tests.framework"
+               BlueprintName = "Pods-SDStateTableView_Tests"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
                BuildableName = "SDStateTableView_Tests.xctest"
                BlueprintName = "SDStateTableView_Tests"
-               ReferencedContainer = "container:SDStateTableView.xcodeproj">
+               ReferencedContainer = "container:../SDStateTableView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -42,24 +42,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "SDStateTableView_Tests.xctest"
-               BlueprintName = "SDStateTableView_Tests"
-               ReferencedContainer = "container:SDStateTableView.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "SDStateTableView_Example.app"
-            BlueprintName = "SDStateTableView_Example"
-            ReferencedContainer = "container:SDStateTableView.xcodeproj">
+            BlueprintIdentifier = "9E16B664E2A8888D689596C69695B184"
+            BuildableName = "Pods_SDStateTableView_Tests.framework"
+            BlueprintName = "Pods-SDStateTableView_Tests"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,16 +65,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "SDStateTableView_Example.app"
-            BlueprintName = "SDStateTableView_Example"
-            ReferencedContainer = "container:SDStateTableView.xcodeproj">
+            BlueprintIdentifier = "9E16B664E2A8888D689596C69695B184"
+            BuildableName = "Pods_SDStateTableView_Tests.framework"
+            BlueprintName = "Pods-SDStateTableView_Tests"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -94,16 +83,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "SDStateTableView_Example.app"
-            BlueprintName = "SDStateTableView_Example"
-            ReferencedContainer = "container:SDStateTableView.xcodeproj">
+            BlueprintIdentifier = "9E16B664E2A8888D689596C69695B184"
+            BuildableName = "Pods_SDStateTableView_Tests.framework"
+            BlueprintName = "Pods-SDStateTableView_Tests"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

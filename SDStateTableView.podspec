@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SDStateTableView'
-  s.version          = '0.0.3-beta'
+  s.version          = '0.0.3'
   s.summary          = 'A subclass of UITableView to show states like data load error, no data found, no internet connect easily.'
 
 # This description is used to generate tags and improve search results.

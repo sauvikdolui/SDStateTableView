@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1811C214121C5A21BA9875E9 /* Pods_SDStateTableView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1D1311E5CDCFD90FD00DDC /* Pods_SDStateTableView_Tests.framework */; };
 		45166C401F90043C00FC1AE1 /* SDStateTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45166C411F90043C00FC1AE1 /* SDStateTableView.framework */; };
 		5D2D1FBA07EC17FB0143E0DD /* Pods_SDStateTableView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC12323B3DDD814345D5A146 /* Pods_SDStateTableView_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -16,6 +15,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		B715E60912B5E9DF7C23DE03 /* Pods_SDStateTableView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1D1311E5CDCFD90FD00DDC /* Pods_SDStateTableView_Tests.framework */; };
+		C8849EB96FDF9B8509F093A4 /* Pods_SDStateTableView_Example_SDStateTableView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E766AB34975292751DD9B0 /* Pods_SDStateTableView_Example_SDStateTableView_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03E766AB34975292751DD9B0 /* Pods_SDStateTableView_Example_SDStateTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDStateTableView_Example_SDStateTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1D1311E5CDCFD90FD00DDC /* Pods_SDStateTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDStateTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11826B830A13C212435C140E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		19FF119866A9F3488F604E7C /* SDStateTableView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SDStateTableView.podspec; path = ../SDStateTableView.podspec; sourceTree = "<group>"; };
@@ -46,9 +48,11 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6DE834084B42B17C4D791C7C /* Pods-SDStateTableView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDStateTableView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDStateTableView_Example/Pods-SDStateTableView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8293E696CA3F1BA7B34F9814 /* Pods-SDStateTableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDStateTableView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDStateTableView_Tests/Pods-SDStateTableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		86E45261A1052F909E98001F /* Pods-SDStateTableView_Example-SDStateTableView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDStateTableView_Example-SDStateTableView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDStateTableView_Example-SDStateTableView_Tests/Pods-SDStateTableView_Example-SDStateTableView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9981C4433F737E15132A8472 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A78AB980C0D63448E20C034A /* Pods-SDStateTableView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDStateTableView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDStateTableView_Example/Pods-SDStateTableView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DC12323B3DDD814345D5A146 /* Pods_SDStateTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDStateTableView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF6378741562246FBF5AD05 /* Pods-SDStateTableView_Example-SDStateTableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDStateTableView_Example-SDStateTableView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDStateTableView_Example-SDStateTableView_Tests/Pods-SDStateTableView_Example-SDStateTableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1811C214121C5A21BA9875E9 /* Pods_SDStateTableView_Tests.framework in Frameworks */,
+				C8849EB96FDF9B8509F093A4 /* Pods_SDStateTableView_Example_SDStateTableView_Tests.framework in Frameworks */,
+				B715E60912B5E9DF7C23DE03 /* Pods_SDStateTableView_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +153,7 @@
 				45166C411F90043C00FC1AE1 /* SDStateTableView.framework */,
 				DC12323B3DDD814345D5A146 /* Pods_SDStateTableView_Example.framework */,
 				0F1D1311E5CDCFD90FD00DDC /* Pods_SDStateTableView_Tests.framework */,
+				03E766AB34975292751DD9B0 /* Pods_SDStateTableView_Example_SDStateTableView_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,6 +165,8 @@
 				A78AB980C0D63448E20C034A /* Pods-SDStateTableView_Example.release.xcconfig */,
 				5E73F86F4DCD377E97488911 /* Pods-SDStateTableView_Tests.debug.xcconfig */,
 				8293E696CA3F1BA7B34F9814 /* Pods-SDStateTableView_Tests.release.xcconfig */,
+				86E45261A1052F909E98001F /* Pods-SDStateTableView_Example-SDStateTableView_Tests.debug.xcconfig */,
+				EEF6378741562246FBF5AD05 /* Pods-SDStateTableView_Example-SDStateTableView_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -175,7 +183,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				B96DE391597CBF6061D60D54 /* [CP] Embed Pods Frameworks */,
-				AAC9D5716071094BBEC4FD71 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,12 +197,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SDStateTableView_Tests" */;
 			buildPhases = (
-				4ED119EB03AFBF3ADFC24135 /* [CP] Check Pods Manifest.lock */,
+				15090255D3485FE4466F4161 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				2A9AEB6934AD98D9146D7526 /* [CP] Embed Pods Frameworks */,
-				9EA187DE3F98CB3207F036E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,6 +224,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 298EMS68R7;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -268,22 +274,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2A9AEB6934AD98D9146D7526 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDStateTableView_Tests/Pods-SDStateTableView_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4ED119EB03AFBF3ADFC24135 /* [CP] Check Pods Manifest.lock */ = {
+		15090255D3485FE4466F4161 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,36 +290,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9EA187DE3F98CB3207F036E8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDStateTableView_Tests/Pods-SDStateTableView_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AAC9D5716071094BBEC4FD71 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDStateTableView_Example/Pods-SDStateTableView_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B96DE391597CBF6061D60D54 /* [CP] Embed Pods Frameworks */ = {
@@ -527,6 +488,7 @@
 			baseConfigurationReference = 6DE834084B42B17C4D791C7C /* Pods-SDStateTableView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 298EMS68R7;
 				INFOPLIST_FILE = SDStateTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -541,6 +503,7 @@
 			baseConfigurationReference = A78AB980C0D63448E20C034A /* Pods-SDStateTableView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 298EMS68R7;
 				INFOPLIST_FILE = SDStateTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
