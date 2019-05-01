@@ -299,6 +299,12 @@ public class SDStateTableView: UITableView {
         if let image = image {
             stateImageView.isHidden = false
             stateImageView.image = image
+			stateImageView.contentMode = .scaleAspectFill
+			// Updates the image width if it is too wide
+			if image.size.width > self.bounds.width {
+				let newSize = CGSize(width: self.bounds.width, height: image.size.height * (self.bounds.width / image.size.width))
+				stateImageView.image = image.imageWith(newSize: newSize)
+			}
         } else {
             stateImageView.isHidden  = true
         }
@@ -333,4 +339,16 @@ public class SDStateTableView: UITableView {
     private func configureForShowinData() {
         stackView.isHidden = true
     }
+}
+
+fileprivate extension UIImage {
+	// Redraws itself to the new size
+	func imageWith(newSize: CGSize) -> UIImage {
+		let renderer = UIGraphicsImageRenderer(size: newSize)
+		let image = renderer.image { _ in
+			self.draw(in: CGRect.init(origin: CGPoint.zero, size: newSize))
+		}
+		
+		return image
+	}
 }
