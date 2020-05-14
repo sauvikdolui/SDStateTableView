@@ -132,6 +132,7 @@ public class SDStateTableView: UITableView {
     var actionButton = UIButton.autolayoutView()
     
     var buttonAction: (() -> Void)?
+    private var buttonConfigCallback: (UIButton) -> Void
     
     public var currentState: SDStateTableViewState = .unknown {
         didSet {
@@ -209,7 +210,6 @@ public class SDStateTableView: UITableView {
         actionButton.layer.borderColor = buttonColor.cgColor
         actionButton.addTarget(self, action: #selector(self.retryButtonTapped(_:)), for: .touchUpInside)
         
-        
         stackView.axis  = .vertical
         stackView.distribution  = .equalSpacing
         stackView.alignment = .center
@@ -229,6 +229,7 @@ public class SDStateTableView: UITableView {
         //
         if case SDStateTableViewState.withButton(_, _, _, _, _, _) = currentState {
             actionButton.isHidden = false
+            buttonConfigCallback(actionButton)
         } else {
             actionButton.isHidden = true
         }
@@ -262,6 +263,7 @@ public class SDStateTableView: UITableView {
             configureWith(image: image, title: title, message: message)
         case .withButton(let errorImage, let title, let message, let buttonTitle,
                          let buttonConfig, let buttonAction):
+            buttonConfigCallback = buttonConfig
             configWithButton(image: errorImage, title: title, message: message,
                              buttonTitle: buttonTitle,
                              buttonConfig: buttonConfig,
