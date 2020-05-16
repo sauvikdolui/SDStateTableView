@@ -132,7 +132,7 @@ public class SDStateTableView: UITableView {
     var actionButton = UIButton.autolayoutView()
     
     var buttonAction: (() -> Void)?
-    private var buttonConfigCallback: (UIButton) -> Void
+    private var buttonConfigCallback: ((UIButton) -> Void)?
     
     public var currentState: SDStateTableViewState = .unknown {
         didSet {
@@ -229,7 +229,9 @@ public class SDStateTableView: UITableView {
         //
         if case SDStateTableViewState.withButton(_, _, _, _, _, _) = currentState {
             actionButton.isHidden = false
-            buttonConfigCallback(actionButton)
+            if let configCallback = buttonConfigCallback {
+                configCallback(actionButton)
+            }
         } else {
             actionButton.isHidden = true
         }
