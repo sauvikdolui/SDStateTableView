@@ -11,7 +11,7 @@ language: swift
 xcode_workspace: Example/SDStateTableView.xcworkspace # path to xcworkspace folder
 xcode_scheme: SDStateTableView-Example
 xcode_destination: platform=iOS Simulator,OS=9.3,name=iPhone 6s
-podfile: Example/Podfile
+podfile: Podfile
 cache:
 - bundler
 - cocoapods
