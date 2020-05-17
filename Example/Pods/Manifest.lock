@@ -1,5 +1,5 @@
 PODS:
-  - SDStateTableView (0.0.3-beta)
+  - SDStateTableView (0.0.3)
 
 DEPENDENCIES:
   - SDStateTableView (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SDStateTableView: d96bf144fc584c86524a3180ba66f4f8d43e0f0c
+  SDStateTableView: cb4dd2a3b6d31850a70e91c19dc79ab127a8e7c6
 
 PODFILE CHECKSUM: 02b529431157bdeeb643c1e3a1d6d2ca14950045
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4

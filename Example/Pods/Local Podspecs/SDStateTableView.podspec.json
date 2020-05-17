@@ -1,6 +1,6 @@
 {
   "name": "SDStateTableView",
-  "version": "0.0.3-beta",
+  "version": "0.0.3",
   "summary": "A subclass of UITableView to show states like data load error, no data found, no internet connect easily.",
   "description": "A subclass of UITableView to show states like data load error, no data found, no internet connect easily. It helps you not to write a table view subclass for every poject to maintain these states.",
   "homepage": "https://github.com/sauvikdolui/SDStateTableView",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/sauvikdolui/SDStateTableView.git",
-    "tag": "0.0.3-beta"
+    "tag": "0.0.3"
   },
   "social_media_url": "https://twitter.com/sauvik_dolui",
   "platforms": {

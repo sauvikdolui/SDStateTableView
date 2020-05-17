@@ -16,7 +16,6 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		B715E60912B5E9DF7C23DE03 /* Pods_SDStateTableView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1D1311E5CDCFD90FD00DDC /* Pods_SDStateTableView_Tests.framework */; };
-		C8849EB96FDF9B8509F093A4 /* Pods_SDStateTableView_Example_SDStateTableView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E766AB34975292751DD9B0 /* Pods_SDStateTableView_Example_SDStateTableView_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +29,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03E766AB34975292751DD9B0 /* Pods_SDStateTableView_Example_SDStateTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDStateTableView_Example_SDStateTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1D1311E5CDCFD90FD00DDC /* Pods_SDStateTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDStateTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11826B830A13C212435C140E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		19FF119866A9F3488F604E7C /* SDStateTableView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SDStateTableView.podspec; path = ../SDStateTableView.podspec; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8849EB96FDF9B8509F093A4 /* Pods_SDStateTableView_Example_SDStateTableView_Tests.framework in Frameworks */,
 				B715E60912B5E9DF7C23DE03 /* Pods_SDStateTableView_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,7 +150,6 @@
 				45166C411F90043C00FC1AE1 /* SDStateTableView.framework */,
 				DC12323B3DDD814345D5A146 /* Pods_SDStateTableView_Example.framework */,
 				0F1D1311E5CDCFD90FD00DDC /* Pods_SDStateTableView_Tests.framework */,
-				03E766AB34975292751DD9B0 /* Pods_SDStateTableView_Example_SDStateTableView_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -298,7 +294,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SDStateTableView_Example/Pods-SDStateTableView_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SDStateTableView_Example/Pods-SDStateTableView_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SDStateTableView/SDStateTableView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -307,7 +303,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDStateTableView_Example/Pods-SDStateTableView_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SDStateTableView_Example/Pods-SDStateTableView_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EE0F10E2D3239EFE60ADABDE /* [CP] Check Pods Manifest.lock */ = {
