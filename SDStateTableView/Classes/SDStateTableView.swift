@@ -342,13 +342,22 @@ public class SDStateTableView: UITableView {
 }
 
 fileprivate extension UIImage {
-	// Redraws itself to the new size
-	func imageWith(newSize: CGSize) -> UIImage {
-		let renderer = UIGraphicsImageRenderer(size: newSize)
-		let image = renderer.image { _ in
-			self.draw(in: CGRect.init(origin: CGPoint.zero, size: newSize))
-		}
-		
-		return image
-	}
+    // Redraws itself to the new size
+    func imageWith(newSize: CGSize) -> UIImage {
+        if #available(iOS 10.0, *) {
+            let renderer = UIGraphicsImageRenderer(size: newSize)
+            let image = renderer.image { _ in
+                self.draw(in: CGRect.init(origin: CGPoint.zero, size: newSize))
+            }
+            
+            return image
+        } else {
+            UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0);
+            self.draw(in: CGRect(x: 0, y:0, width:newSize.width, height:newSize.height));
+            let image = UIGraphicsGetImageFromCurrentImageContext();
+            UIGraphicsEndImageContext();
+            
+            return image ?? self;
+        }
+    }
 }
