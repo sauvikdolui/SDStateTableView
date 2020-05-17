@@ -19,6 +19,7 @@ before_install:
 - gem install bundler --pre
 - gem install cocoapods
 install:
+- cd Example
 - pod install --repo-update
 
 jobs:
