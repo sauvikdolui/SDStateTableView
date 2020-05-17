@@ -18,7 +18,6 @@ cache:
 before_install:
 - gem install bundler --pre
 - gem install cocoapods
-- bundle install
 install:
 - pod install --repo-update
 
