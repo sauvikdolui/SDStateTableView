@@ -27,4 +27,4 @@ jobs:
   - stage: build
     if: type = pull_request OR type = push
     script:
-    - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/SDStateTableView.xcworkspace -scheme SDStateTableView-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
+    - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/SDStateTableView.xcworkspace -scheme SDStateTableView-Example -sdk iphonesimulator13.4 ONLY_ACTIVE_ARCH=NO | xcpretty
