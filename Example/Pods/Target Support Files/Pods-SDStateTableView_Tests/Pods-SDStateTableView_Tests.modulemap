@@ -1,6 +1,0 @@
-framework module Pods_SDStateTableView_Tests {
-  umbrella header "Pods-SDStateTableView_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -10,7 +10,7 @@ osx_image: xcode11.4
 language: swift
 xcode_workspace: Example/SDStateTableView.xcworkspace # path to xcworkspace folder
 xcode_scheme: SDStateTableView-Example
-xcode_destination: platform=iOS Simulator,OS=9.3,name=iPhone 6s
+xcode_destination: platform=iOS Simulator,OS=13.4.1,name=iPhone 8
 podfile: Podfile
 cache:
 - bundler
@@ -26,4 +26,4 @@ jobs:
     if: type = pull_request OR type = push
     script:
     - xcodebuild -showsdks
-    - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/SDStateTableView.xcworkspace -scheme SDStateTableView-Example -sdk "iphonesimulator9.3" ONLY_ACTIVE_ARCH=NO | xcpretty
+    - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/SDStateTableView.xcworkspace -scheme SDStateTableView-Example -destination "OS=13.4.1,name=iPhone 8" -sdk "iphonesimulator13.4" ONLY_ACTIVE_ARCH=NO | xcpretty

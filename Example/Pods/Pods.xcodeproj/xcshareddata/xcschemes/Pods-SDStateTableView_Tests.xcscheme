@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9E16B664E2A8888D689596C69695B184"
+               BlueprintIdentifier = "51388B00B7D7A6A1269A7E3A0A1F89B2"
                BuildableName = "Pods_SDStateTableView_Tests.framework"
                BlueprintName = "Pods-SDStateTableView_Tests"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -44,7 +44,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9E16B664E2A8888D689596C69695B184"
+            BlueprintIdentifier = "51388B00B7D7A6A1269A7E3A0A1F89B2"
             BuildableName = "Pods_SDStateTableView_Tests.framework"
             BlueprintName = "Pods-SDStateTableView_Tests"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -66,7 +66,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9E16B664E2A8888D689596C69695B184"
+            BlueprintIdentifier = "51388B00B7D7A6A1269A7E3A0A1F89B2"
             BuildableName = "Pods_SDStateTableView_Tests.framework"
             BlueprintName = "Pods-SDStateTableView_Tests"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -82,7 +82,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9E16B664E2A8888D689596C69695B184"
+            BlueprintIdentifier = "51388B00B7D7A6A1269A7E3A0A1F89B2"
             BuildableName = "Pods_SDStateTableView_Tests.framework"
             BlueprintName = "Pods-SDStateTableView_Tests"
             ReferencedContainer = "container:Pods.xcodeproj">
