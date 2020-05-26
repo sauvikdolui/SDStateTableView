@@ -25,7 +25,7 @@ DESC
   s.homepage         = 'https://github.com/sauvikdolui/SDStateTableView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'sauvikdolui' => 'sauvikdolui.apple@gmail.com' }
+  s.author           = { 'sauvikdolui' => 'sauvikdolui@gmail.com' }
   s.source           = { :git => 'https://github.com/sauvikdolui/SDStateTableView.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/sauvik_dolui'
 
