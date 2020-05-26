@@ -43,8 +43,8 @@
 		020C003F8CCD9C9955FC1150396A5883 /* Pods-SDStateTableView_Example-SDStateTableView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SDStateTableView_Example-SDStateTableView_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		02A0866201275A751ECD1F7262A6FF7F /* UILayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UILayout.swift; sourceTree = "<group>"; };
 		06D33A349A770411D95D1D04FA3DD789 /* Pods-SDStateTableView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SDStateTableView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0B11B8FF5B09A5BA6CD26E6A9F2EE42A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		15D6C4DD1EFCC52CE1E4BDD077D94A6E /* SDStateTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDStateTableView.framework; path = SDStateTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B11B8FF5B09A5BA6CD26E6A9F2EE42A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		15D6C4DD1EFCC52CE1E4BDD077D94A6E /* SDStateTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDStateTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		37027328DC1BCAB2BFDFBC6E66069BDC /* SDStateTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDStateTableView-prefix.pch"; sourceTree = "<group>"; };
 		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -55,15 +55,15 @@
 		66A444652FAF2A9E68E2ECB687F66EF4 /* Pods-SDStateTableView_Example-SDStateTableView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDStateTableView_Example-SDStateTableView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		67B297D5DBCB62E0350240285BB5632F /* Pods-SDStateTableView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDStateTableView_Example-umbrella.h"; sourceTree = "<group>"; };
 		6807DF4A5A0BBA8D33F7922440078B6E /* Pods-SDStateTableView_Example-SDStateTableView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDStateTableView_Example-SDStateTableView_Tests-umbrella.h"; sourceTree = "<group>"; };
-		68A49B51006582E612ACAAE7330782D3 /* Pods_SDStateTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SDStateTableView_Example.framework; path = "Pods-SDStateTableView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A49B51006582E612ACAAE7330782D3 /* Pods_SDStateTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDStateTableView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7ED9CF5A75E497C6DA538349798323 /* Pods-SDStateTableView_Example-SDStateTableView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SDStateTableView_Example-SDStateTableView_Tests.modulemap"; sourceTree = "<group>"; };
 		6FCFEAF77956A66C310D32C3AEAE0ECE /* SDStateTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDStateTableView-dummy.m"; sourceTree = "<group>"; };
 		797DBF7EC8DA4F3537E01C443500A3B9 /* Pods-SDStateTableView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SDStateTableView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		7EC9B47207BE4649CDC64EE38B58CFA7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7EC9B47207BE4649CDC64EE38B58CFA7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		931FD76C60B93F32EFD21592223DBC66 /* Pods-SDStateTableView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDStateTableView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		99C336909DA17360F6E3580F28672A99 /* Pods-SDStateTableView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SDStateTableView_Example.modulemap"; sourceTree = "<group>"; };
-		9A884BDA2ABEFACD7870059BC5662FE0 /* Pods_SDStateTableView_Example_SDStateTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SDStateTableView_Example_SDStateTableView_Tests.framework; path = "Pods-SDStateTableView_Example-SDStateTableView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A884BDA2ABEFACD7870059BC5662FE0 /* Pods_SDStateTableView_Example_SDStateTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDStateTableView_Example_SDStateTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A038EDF66E7D4F4E48F0CA49E2ACFB7B /* Pods-SDStateTableView_Example-SDStateTableView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SDStateTableView_Example-SDStateTableView_Tests-dummy.m"; sourceTree = "<group>"; };
 		A0BD2EDF04CD42A6D46E741A51568C2B /* SDStateTableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDStateTableView.xcconfig; sourceTree = "<group>"; };
 		AB2D21E9CA4EA49DAE1DD8CC16CC625D /* Pods-SDStateTableView_Example-SDStateTableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDStateTableView_Example-SDStateTableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		DA484084F59B0B90694DEBC7515A9D59 /* UIViewAutolayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewAutolayout.swift; sourceTree = "<group>"; };
 		DDF194083F95FC7EAE602C9813BA0524 /* SDStateTableView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SDStateTableView-Info.plist"; sourceTree = "<group>"; };
 		E598F6E4896A0F86A6CECDC6CF18FB16 /* SDStateTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SDStateTableView.modulemap; sourceTree = "<group>"; };
-		E71BF35740070719CD922D69E0C97381 /* SDStateTableView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SDStateTableView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E71BF35740070719CD922D69E0C97381 /* SDStateTableView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SDStateTableView.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		FA7BADAE63CA101F9035424C51C2BA9E /* SDStateTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SDStateTableView.swift; path = SDStateTableView/Classes/SDStateTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -646,8 +646,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
