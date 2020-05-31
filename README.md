@@ -1,6 +1,7 @@
 # SDStateTableView
 
 [![CI Status](http://img.shields.io/travis/sauvikdolui/SDStateTableView.svg?style=flat)](https://travis-ci.org/sauvikdolui/SDStateTableView)
+[![codecov.io](https://codecov.io/gh/codecov/SDStateTableView/branch/master/graphs/badge.svg)](https://codecov.io/gh/codecov/SDStateTableView/branch/master)
 [![Version](https://img.shields.io/cocoapods/v/SDStateTableView.svg?style=flat)](http://cocoapods.org/pods/SDStateTableView)
 [![License](https://img.shields.io/cocoapods/l/SDStateTableView.svg?style=flat)](http://cocoapods.org/pods/SDStateTableView)
 [![Platform](https://img.shields.io/cocoapods/p/SDStateTableView.svg?style=flat)](http://cocoapods.org/pods/SDStateTableView)
