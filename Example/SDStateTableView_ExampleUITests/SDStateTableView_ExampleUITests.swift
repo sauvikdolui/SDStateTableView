@@ -24,16 +24,7 @@ class SDStateTableView_ExampleUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    func test_data_available_state_config(){
-        
+    func test_post_launch_table_view_state() {
         // 1. Launch the application with default options and command line arguments
         let app = XCUIApplication()
         app.launch()
@@ -44,9 +35,11 @@ class SDStateTableView_ExampleUITests: XCTestCase {
         XCTAssertTrue(tableView.exists, "Table View Must Be Present On Screen Now")
         let cells = tableView.cells
         XCTAssertTrue(cells.count == 0, "No cell should be visible before `Data Available Button` is tapped")
+    }
+    func test_data_available_state_config() {
         
-        // 3. Tap on button `Data Available`
-        app.buttons["Data Available"].tap()
+        let app = launchAppAndTapButton(buttonText: "Data Available")
+        let tableView = app.tables.firstMatch
         
         // 4. Make sure table view appears on screen
         guard tableView.cells.count > 0 else {
@@ -64,7 +57,35 @@ class SDStateTableView_ExampleUITests: XCTestCase {
         // Checking scrollability
         tableView.swipeUp()
         tableView.swipeDown()
+    }
+    
+    func test_no_data_state_config() {
+        let app = launchAppAndTapButton(buttonText: "No Data")
+        let tableView = app.tables.firstMatch
         
+        // 1. Make sure table view appears on screen
+        guard tableView.cells.count == 0 else {
+            XCTFail("Cells must not be shown")
+            return
+        }
+        
+        // 2. Assert No Data State
+        let emptyCartLabel = tableView.staticTexts["EMPTY CART"]
+        let descLabel = tableView.staticTexts["Please add some item in your cart first"]
+        XCTAssertTrue(emptyCartLabel.exists, "EMPTY CART not found")
+        XCTAssertTrue(descLabel.exists, "Description Label Not Found")
+        //XCTAssertTrue(tableView.images["StackImageView"].exists, "No Cart Image Found")
+    }
+    
+    private func launchAppAndTapButton(buttonText: String) -> XCUIApplication {
+        // 1. Launch the application with default options and command line arguments
+        let app = XCUIApplication()
+        app.launch()
+
+        // 2. Tap on button `Data Available`
+        app.buttons[buttonText].tap()
+        
+        return app
     }
 
     func testLaunchPerformance() throws {
