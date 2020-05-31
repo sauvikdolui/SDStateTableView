@@ -61,6 +61,16 @@
                ReferencedContainer = "container:SDStateTableView.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "45922F0B24842A2B0052EA22"
+               BuildableName = "SDStateTableView_ExampleUITests.xctest"
+               BlueprintName = "SDStateTableView_ExampleUITests"
+               ReferencedContainer = "container:SDStateTableView.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
