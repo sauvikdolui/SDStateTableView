@@ -26,6 +26,6 @@ jobs:
     if: type = pull_request OR type = push
     script:
     - instruments -s devices
-    - xcodebuild build test -workspace Example/SDStateTableView.xcworkspace -scheme  SDStateTableView-Example -destination 'platform=iOS Simulator,id=B94F3816E-7DD9-434C-BED7-30E380C5F59A' -enableCodeCoverage YES
+    - xcodebuild build test -workspace Example/SDStateTableView.xcworkspace -scheme  SDStateTableView-Example -destination 'platform=iOS Simulator,name=iPhone SE (1st generation),OS=10.3.1' -enableCodeCoverage YES
 after_success:
 - bash <(curl -s https://codecov.io/bash)
